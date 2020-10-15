@@ -8,8 +8,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D p_rigidbody;        //variavel que guarda o rigidbody2d do pedrin
 
     public float speed;                     //velocidade de movimento
-    private float inputX;
-    private float inputY;
+    public float inputX, inputY;
     private Vector3 movement;
 
     public string collectedText;
@@ -20,6 +19,8 @@ public class PlayerController : MonoBehaviour {
     public float lastFire;
     public float fireDelay;
 
+    public bool isAttacking;
+
     void Start()
     {
         animator = this.GetComponent<Animator>();
@@ -29,11 +30,16 @@ public class PlayerController : MonoBehaviour {
     //fixed update eh chamado em um intervalo fixo que depende do frame rate da maquina, usado pra chamar funcoes que envolvem fisica
     void FixedUpdate()
     {
-        inputX = Input.GetAxis("Horizontal");       //guarda inputs do eixo x ('a', 's', '<-' e '->')
-        inputY = Input.GetAxis("Vertical");         //guarda inputs do eixo y
+        inputX = Input.GetAxisRaw("Horizontal");       //guarda inputs do eixo x ('a', 's', '<-' e '->')
+        inputY = Input.GetAxisRaw("Vertical");         //guarda inputs do eixo y
 
         movement = new Vector3(inputX, inputY, 0);  //cria o vector3 movement correspondente aos inputs
         movement = movement.normalized * speed * Time.deltaTime;    //movement normalizado e ajustado pelo tempo e velocidade
+        p_rigidbody.MovePosition(transform.position + movement);
+
+        animator.SetFloat("InputX", inputX);
+        animator.SetFloat("InputY", inputY);
+        animator.SetFloat("Speed", inputX != 0 ? 1 : inputY != 0 ? 1 : 0);
 
         float shootHor = Input.GetAxis("ShootHorizontal");
         float shootVert = Input.GetAxis("ShootVertical");
@@ -44,19 +50,6 @@ public class PlayerController : MonoBehaviour {
         }
 
         collectedText = "Items Collected: " + collectedAmount;
-
-        //caso o vetor movement seja diferente de 0, o jogador esta se movimentando, variaiveis de animacao atualizadas
-        if(movement != Vector3.zero){
-            animator.SetBool("isWalking", true);
-            animator.SetFloat("InputX", movement.x);
-            animator.SetFloat("InputY", movement.y);
-        }
-        else{
-            animator.SetBool("isWalking", false);
-        }
-
-        transform.position += movement;             //posicao atualizada
-        p_rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;    //rotacao setada em 0 para evitar bugs nos colisores
     }
 
     void Shoot(float horizontal, float vertical) {
