@@ -16,11 +16,9 @@ public class EnemyController : MonoBehaviour
     public float range;
     public float speed;
     private bool chooseDir = false;
-    private bool dead = false;
     private Vector3 randomDir;
 
    
-
     // Start is called before the first frame update
     void Start()
     {
