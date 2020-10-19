@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     public float inputX, inputY;
     private Vector3 movement;
 
-    public string collectedText;
+    public Text collectedText;
     public static int collectedAmount = 0;
 
     public GameObject bulletPrefab;
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour {
             lastFire = Time.time;
         }
 
-        collectedText = "Items Collected: " + collectedAmount;
+        collectedText.text = "Items Collected: " + collectedAmount;
     }
 
     void Shoot(float horizontal, float vertical) {

@@ -5,7 +5,8 @@ using UnityEngine;
 public enum EnemyState {
     Wander,
     Follow,
-    Die
+    Die,
+    Attack
 };
 
 public class EnemyController : MonoBehaviour
@@ -15,7 +16,10 @@ public class EnemyController : MonoBehaviour
     public EnemyState currState = EnemyState.Wander;
     public float range;
     public float speed;
+    public float attackRange;
     private bool chooseDir = false;
+    private bool coolDownAttack = false;
+    public float coolDown;
     private Vector3 randomDir;
 
    
@@ -38,6 +42,9 @@ public class EnemyController : MonoBehaviour
             break;
             case(EnemyState.Die):
             break;
+            case(EnemyState.Attack):
+                Attack();
+            break;
         }
 
         if (isPlayerInRange(range) && currState != EnemyState.Die) {
@@ -45,6 +52,9 @@ public class EnemyController : MonoBehaviour
         } else if (!isPlayerInRange(range) && currState != EnemyState.Die) {
             currState = EnemyState.Wander;
         }
+        if (isPlayerInRange(attackRange)) {
+            currState = EnemyState.Attack;
+        } 
     }
 
     private bool isPlayerInRange(float range) {
@@ -74,6 +84,19 @@ public class EnemyController : MonoBehaviour
 
     void Follow() {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+    }
+
+    void Attack() {
+        if (!coolDownAttack) {
+            GameController.DamagePlayer(10);
+            StartCoroutine(CoolDown());
+        }
+    }
+
+    private IEnumerator CoolDown() {
+        coolDownAttack = true;
+        yield return new WaitForSeconds(coolDown);
+        coolDownAttack = false;
     }
 
     public void Death() {
