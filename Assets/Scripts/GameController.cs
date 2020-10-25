@@ -8,15 +8,17 @@ public class GameController : MonoBehaviour
 
     public static GameController instance;
 
-    private static int health = 100;
+    private static float health = 100;
     private static int maxHealth = 100;
-    // private static float moveSpeed = 5f;
-    // private static float fireRate = 0.5f;
+    private static float moveSpeed = 5f; // Erro dizendo que já existe isso no GameController
+    private static float fireRate = 0.5f;
+    private static float bulletSize = 0.2f;
 
-    public static int Health { get => health; set => health = value; }
+    public static float Health { get => health; set => health = value; }
     public static int MaxHealth { get => maxHealth; set => maxHealth = value; }
-    public static float moveSpeed { get => moveSpeed; set => moveSpeed = value; }
-    public static float fireRate { get => fireRate; set => fireRate = value; }
+    public static float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
+    public static float FireRate { get => fireRate; set => fireRate = value; }
+    public static float BulletSize { get => bulletSize; set => bulletSize = value; }
 
     public Text healthText;
 
@@ -47,8 +49,20 @@ public class GameController : MonoBehaviour
 
     }
 
-    public static void HealPlayer(int healAmount) {
+    public static void HealPlayer(float healAmount) {
         health = Mathf.Min(maxHealth, health + healAmount);
+    }
+
+    public static void MoveSpeedChange(float speed) {
+        moveSpeed += speed;
+    }
+
+    public static void FireRateChange(float rate) {
+        fireRate -= rate;
+    }
+
+    public static void BulletSizeChange(float size) {
+        bulletSize += size;
     }
 
     private static void KillPlayer() {

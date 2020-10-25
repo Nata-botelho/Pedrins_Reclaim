@@ -30,6 +30,9 @@ public class PlayerController : MonoBehaviour {
     //fixed update eh chamado em um intervalo fixo que depende do frame rate da maquina, usado pra chamar funcoes que envolvem fisica
     void FixedUpdate()
     {
+        fireDelay = GameController.FireRate;
+        speed = GameController.MoveSpeed;
+
         inputX = Input.GetAxisRaw("Horizontal");       //guarda inputs do eixo x ('a', 's', '<-' e '->')
         inputY = Input.GetAxisRaw("Vertical");         //guarda inputs do eixo y
 
