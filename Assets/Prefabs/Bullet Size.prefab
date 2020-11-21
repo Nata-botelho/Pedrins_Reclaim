@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4457865016044008527}
   - component: {fileID: 4457865016044008526}
-  - component: {fileID: 4457865016044008525}
+  - component: {fileID: -5621657922311041184}
   - component: {fileID: 4457865016044008524}
   m_Layer: 0
   m_Name: Bullet Size
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &4457865016044008525
+--- !u!58 &-5621657922311041184
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

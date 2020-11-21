@@ -108,7 +108,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 4442977920811737544, guid: 8289154b7d5416d41b3caf6d0affdb81, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   attackRange: 1
   bulletSpeed: 0
   coolDown: 2
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 9203748386609312464, guid: a3028f5c1e820e64bb912d0da367fd0a, type: 3}
 --- !u!222 &5069012429014544997
 CanvasRenderer:
   m_ObjectHideFlags: 0

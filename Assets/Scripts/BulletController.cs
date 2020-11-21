@@ -24,6 +24,7 @@ public class BulletController : MonoBehaviour
         if (isEnemyBullet) {
             curPos = transform.position;
             transform.position = Vector2.MoveTowards(transform.position, playerPos, 5f*Time.deltaTime);
+            // transform.rotation = Quaternion.Lerp(transform.rotation, , 0);
             if (curPos == lastPos) {
                 Destroy(gameObject);
             }

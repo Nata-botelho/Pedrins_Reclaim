@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     private static int maxHealth = 100;
     private static float moveSpeed = 5f; // Erro dizendo que já existe isso no GameController
     private static float fireRate = 0.5f;
-    private static float bulletSize = 0.2f;
+    private static float bulletSize = 0.5f;
 
     public static float Health { get => health; set => health = value; }
     public static int MaxHealth { get => maxHealth; set => maxHealth = value; }
