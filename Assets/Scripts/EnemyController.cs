@@ -30,6 +30,9 @@ public class EnemyController : MonoBehaviour
     private Vector3 randomDir;
     public GameObject bulletPrefab;
 
+    public Animator animator;
+    public float x, px, y, py;
+
    
     // Start is called before the first frame update
     void Start()
@@ -84,6 +87,7 @@ public class EnemyController : MonoBehaviour
         }
 
         transform.position += -transform.right * speed * Time.deltaTime;
+
         if (isPlayerInRange(range)) {
             currState = EnemyState.Follow;
         }
@@ -91,7 +95,14 @@ public class EnemyController : MonoBehaviour
     }
 
     void Follow() {
+
+        
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        x = Vector2.MoveTowards(transform.position, player.transform.position, int.MaxValue).x;
+        y = Vector2.MoveTowards(transform.position, player.transform.position, int.MaxValue).y;
+
+        animator.SetFloat("x", x);
+        animator.SetFloat("y", y);
     }
 
     void Attack() {

@@ -138,6 +138,11 @@ MonoBehaviour:
   bulletSpeed: 0
   coolDown: 2
   bulletPrefab: {fileID: 9203748386609312464, guid: a3028f5c1e820e64bb912d0da367fd0a, type: 3}
+  animator: {fileID: 5069012429014544996}
+  x: 0
+  px: 0
+  y: 0
+  py: 0
 --- !u!222 &5069012429014544997
 CanvasRenderer:
   m_ObjectHideFlags: 0

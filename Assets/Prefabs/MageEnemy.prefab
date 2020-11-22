@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1496322459674554884}
   - component: {fileID: 1496322459674554907}
   m_Layer: 8
-  m_Name: RangedEnemy
+  m_Name: MageEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
   range: 10
   speed: 1
   attackRange: 5
-  bulletSpeed: 5
+  bulletSpeed: 2
   coolDown: 2
   bulletPrefab: {fileID: 9203748386609312464, guid: a3028f5c1e820e64bb912d0da367fd0a, type: 3}
 --- !u!222 &1496322459674554885
