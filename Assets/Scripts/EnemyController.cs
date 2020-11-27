@@ -31,7 +31,7 @@ public class EnemyController : MonoBehaviour
     public GameObject bulletPrefab;
 
     public Animator animator;
-    public float x, px, y, py;
+    public Vector2 direction;
 
    
     // Start is called before the first frame update
@@ -82,6 +82,7 @@ public class EnemyController : MonoBehaviour
     }
 
     void Wander() {
+        
         if (!chooseDir) {
             StartCoroutine(ChooseDirection());
         }
@@ -91,18 +92,13 @@ public class EnemyController : MonoBehaviour
         if (isPlayerInRange(range)) {
             currState = EnemyState.Follow;
         }
-
     }
 
     void Follow() {
-
-        
+        direction = (player.transform.position - transform.position).normalized;
+        animator.SetFloat("x", direction.x);
+        animator.SetFloat("y", direction.y);
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-        x = Vector2.MoveTowards(transform.position, player.transform.position, int.MaxValue).x;
-        y = Vector2.MoveTowards(transform.position, player.transform.position, int.MaxValue).y;
-
-        animator.SetFloat("x", x);
-        animator.SetFloat("y", y);
     }
 
     void Attack() {
@@ -122,6 +118,7 @@ public class EnemyController : MonoBehaviour
                     StartCoroutine(CoolDown());
                 break;
             }
+            
         }
     }
 
