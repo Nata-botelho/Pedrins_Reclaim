@@ -22,7 +22,6 @@ public class TrapController : MonoBehaviour
     public TrapType type;
     public TrapMovement movement;
     public float speed = 2f;
-    private float direction = 0f;
     public float yAxis = -2.5f;
     public float xAxis =  100f;
     private bool chooseDir = false;

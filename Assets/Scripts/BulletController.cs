@@ -43,7 +43,8 @@ public class BulletController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col) {
         if (col.tag == "Enemy" && !isEnemyBullet) {
-            col.gameObject.GetComponent<EnemyController>().Death();
+            col.GetComponentInChildren<HealthBarController>().hp -= 25;
+            if (col.GetComponentInChildren<HealthBarController>().hp < 1) col.gameObject.GetComponent<EnemyController>().Death();
             Destroy(gameObject);
         }
         if (col.tag == "Player" && isEnemyBullet) {

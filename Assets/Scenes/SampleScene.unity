@@ -345,9 +345,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
-    weight: 0.5
+    weight: 0.3
   - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
-    weight: 0.5
+    weight: 0.3
+  - gameObject: {fileID: 369934677529828792, guid: c396bf04d83d67a4fbc0a5b6de83e3b6, type: 3}
+    weight: 0.4
   spawnRate: 20
 --- !u!4 &427978030
 Transform:

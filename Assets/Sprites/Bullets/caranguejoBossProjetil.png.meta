@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: 6c8ff873a9fa64b4eb322d5b875a2fd8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1848735136397125242
+    second: caranguejoBossProjetil_0
+  - first:
+      213: -9057168437221272299
+    second: caranguejoBossProjetil_1
+  - first:
+      213: -5572415277748429801
+    second: caranguejoBossProjetil_2
+  - first:
+      213: -3097608866078605851
+    second: caranguejoBossProjetil_3
+  - first:
+      213: 1039519558295606219
+    second: caranguejoBossProjetil_4
+  - first:
+      213: 1677133373799722160
+    second: caranguejoBossProjetil_5
+  - first:
+      213: 2572637285157190573
+    second: caranguejoBossProjetil_6
+  - first:
+      213: -7947532395878271300
+    second: caranguejoBossProjetil_7
+  - first:
+      213: 580636757566210393
+    second: caranguejoBossProjetil_8
+  - first:
+      213: -389153887668836606
+    second: caranguejoBossProjetil_9
+  - first:
+      213: 2333920500297743746
+    second: caranguejoBossProjetil_0
+  - first:
+      213: 3643315267436918020
+    second: caranguejoBossProjetil_1
+  - first:
+      213: -2065195587852551398
+    second: caranguejoBossProjetil_2
+  - first:
+      213: 4158191668493080381
+    second: caranguejoBossProjetil_3
+  - first:
+      213: 3695614353004550716
+    second: caranguejoBossProjetil_4
+  - first:
+      213: -8150260159445549332
+    second: caranguejoBossProjetil_5
+  - first:
+      213: -1040293976061423527
+    second: caranguejoBossProjetil_6
+  - first:
+      213: 4928199497684718722
+    second: caranguejoBossProjetil_7
+  - first:
+      213: 7285169210321612922
+    second: caranguejoBossProjetil_8
+  - first:
+      213: 3100219896852212865
+    second: caranguejoBossProjetil_9
+  - first:
+      213: 246137221579226218
+    second: caranguejoBossProjetil_10
+  - first:
+      213: -2803624395114380460
+    second: caranguejoBossProjetil_11
+  - first:
+      213: -2194806897421298533
+    second: caranguejoBossProjetil_12
+  - first:
+      213: 2395380068489952947
+    second: caranguejoBossProjetil_13
+  - first:
+      213: 1415719432549277717
+    second: caranguejoBossProjetil_14
+  - first:
+      213: -9084329156476960861
+    second: caranguejoBossProjetil_15
+  - first:
+      213: -933964400489465444
+    second: caranguejoBossProjetil_16
+  - first:
+      213: 7008514738304446691
+    second: caranguejoBossProjetil_17
+  - first:
+      213: -6374074225411780665
+    second: caranguejoBossProjetil_18
+  - first:
+      213: 3674969382841907490
+    second: caranguejoBossProjetil_19
+  - first:
+      213: 2461028393752764142
+    second: caranguejoBossProjetil_20
+  - first:
+      213: -7563705043532631222
+    second: caranguejoBossProjetil_21
+  - first:
+      213: 7169920411953505865
+    second: caranguejoBossProjetil_22
+  - first:
+      213: 3089621858149994209
+    second: caranguejoBossProjetil_23
+  - first:
+      213: 8839488890286908321
+    second: caranguejoBossProjetil_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 78, y: 0, z: 30, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caranguejoBossProjetil_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 14
+        width: 32
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dbf325450c36020800000000000000
+      internalID: 2333920500297743746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caranguejoBossProjetil_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 9
+        width: 30
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405b550cee7af8230800000000000000
+      internalID: 3643315267436918020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caranguejoBossProjetil_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 14
+        width: 31
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b38520e83f653e0800000000000000
+      internalID: -2065195587852551398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caranguejoBossProjetil_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 10
+        width: 31
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37d48c9a4dd4b930800000000000000
+      internalID: 4158191668493080381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caranguejoBossProjetil_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 10
+        width: 32
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3adba18ca5794330800000000000000
+      internalID: 3695614353004550716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

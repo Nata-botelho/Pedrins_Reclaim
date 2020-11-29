@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
         movement = new Vector3(inputX, inputY, 0);  //cria o vector3 movement correspondente aos inputs
         movement = movement.normalized * speed * Time.deltaTime;    //movement normalizado e ajustado pelo tempo e velocidade
         p_rigidbody.MovePosition(transform.position + movement);
-
+        
         animator.SetFloat("InputX", inputX);
         animator.SetFloat("InputY", inputY);
         animator.SetFloat("Speed", inputX != 0 ? 1 : inputY != 0 ? 1 : 0);
