@@ -30,7 +30,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369934677529828792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -70.94952}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.69368446, y: 0.69368446, z: 0.69368446}
   m_Children:
   - {fileID: 5141996058142309370}
@@ -39,7 +39,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.21, y: 0.36}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 3.8899999, y: 5.506592}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!60 &-8184329982551768971
@@ -284,10 +284,14 @@ MonoBehaviour:
   speed: 1
   attackRange: 7
   bulletSpeed: 2
+  bulletInitialPos: {x: -2, y: 0.5}
   coolDown: 2
   bulletPrefab: {fileID: 2223827450312700134, guid: c6ea7b37a3b9b9b4ba7e7eaff8827547, type: 3}
   animator: {fileID: 2946630577289839086}
   direction: {x: 0, y: 0}
+  animSpeed: 0
+  isMoving: 0
+  isAttacking: 0
 --- !u!50 &369934677529828799
 Rigidbody2D:
   serializedVersion: 4
@@ -327,7 +331,7 @@ Animator:
   m_GameObject: {fileID: 369934677529828792}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fd9f2d6c0a932fd4e8d3f42b55333245, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4b644657e0e167146b07dc5b8cd4069a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -479,7 +483,8 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0.6003619
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7569025627921189652, guid: e6a5b84a629da5149a998c7ff0a55018, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e6a5b84a629da5149a998c7ff0a55018, type: 3}
 --- !u!224 &5141996058142309370 stripped
 RectTransform:

@@ -24,6 +24,7 @@ public class EnemyController : MonoBehaviour
     public float speed;
     public float attackRange;
     public float bulletSpeed;
+    public Vector2 bulletInitialPos;
     private bool chooseDir = false;
     private bool coolDownAttack = false;
     public float coolDown;
@@ -32,6 +33,7 @@ public class EnemyController : MonoBehaviour
 
     public Animator animator;
     public Vector2 direction;
+    public bool animSpeed, isMoving, isAttacking;
 
    
     // Start is called before the first frame update
@@ -66,6 +68,8 @@ public class EnemyController : MonoBehaviour
         if (isPlayerInRange(attackRange)) {
             currState = EnemyState.Attack;
         } 
+
+        updateAnim();
     }
 
     private bool isPlayerInRange(float range) {
@@ -82,7 +86,9 @@ public class EnemyController : MonoBehaviour
     }
 
     void Wander() {
-        
+        isMoving = true;
+        isAttacking = false;
+
         if (!chooseDir) {
             StartCoroutine(ChooseDirection());
         }
@@ -95,13 +101,15 @@ public class EnemyController : MonoBehaviour
     }
 
     void Follow() {
+        isMoving = true;
+        isAttacking = false;
         direction = (player.transform.position - transform.position).normalized;
-        animator.SetFloat("x", direction.x);
-        animator.SetFloat("y", direction.y);
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
 
     void Attack() {
+        isMoving = false;
+        isAttacking = true;
         if (!coolDownAttack) {
             // GameController.DamagePlayer(10);
             // StartCoroutine(CoolDown());
@@ -111,11 +119,8 @@ public class EnemyController : MonoBehaviour
                     StartCoroutine(CoolDown());
                 break;
                 case(EnemyType.Ranged):
-                    GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject;
-                    bullet.GetComponent<BulletController>().isEnemyBullet = true;
-                    bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
-                    bullet.GetComponent<BulletController>().GetPlayer(player.transform);
-                    StartCoroutine(CoolDown());
+
+                    
                 break;
             }
             
@@ -129,6 +134,24 @@ public class EnemyController : MonoBehaviour
     }
 
     public void Death() {
+        isMoving = false;
+        isAttacking = false;
         Destroy(gameObject);
+    }
+
+    private void updateAnim(){
+        animator.SetFloat("x", direction.x);
+        animator.SetFloat("y", direction.y);
+        animator.SetBool("moving", isMoving);
+        animator.SetBool("attacking", isAttacking);
+    }
+
+    public void Shoot(){
+        GameObject bullet = Instantiate(bulletPrefab, (Vector2)this.transform.position + bulletInitialPos, Quaternion.identity) as GameObject;
+        bullet.GetComponent<BulletController>().isEnemyBullet = true;
+        bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
+        bullet.GetComponent<BulletController>().GetPlayer(player.transform);
+        StartCoroutine(CoolDown());
+        isAttacking = false;
     }
 }

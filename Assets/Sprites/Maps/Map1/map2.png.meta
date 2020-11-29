@@ -1,22 +1,34 @@
 fileFormatVersion: 2
-guid: 57baace662232dc40a0dbb3303ebf5ef
+guid: 538a70c9f5da52d4d8d3c01b5fadc8d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -832968002161655723
-    second: caranguejoBossAtirando_0
+      213: -1046444227985733684
+    second: map2_0
   - first:
-      213: 5115155445968860350
-    second: caranguejoBossAtirando_1
+      213: -9072651186510017257
+    second: map2_1
   - first:
-      213: -3446614908570494135
-    second: caranguejoBossAtirando_2
+      213: -2806435088360547321
+    second: map2_2
   - first:
-      213: -8201911607700485307
-    second: caranguejoBossAtirando_3
+      213: 3926147504890547233
+    second: map2_3
   - first:
-      213: 8239200444555336728
-    second: caranguejoBossAtirando_4
+      213: -4180376041652523451
+    second: map2_4
+  - first:
+      213: -317675168804760494
+    second: map2_5
+  - first:
+      213: -4634688712491683783
+    second: map2_6
+  - first:
+      213: 1596749008245605003
+    second: map2_7
+  - first:
+      213: -2691305911881301889
+    second: map2_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -61,7 +73,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: caranguejoBossAtirando_0
+      name: map2_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 0
-        width: 589
-        height: 550
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55043e9e304b074f0800000000000000
-      internalID: -832968002161655723
+      spriteID: cc707a9d4884a71f0800000000000000
+      internalID: -1046444227985733684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caranguejoBossAtirando_1
+      name: map2_1
       rect:
         serializedVersion: 2
-        x: 613
-        y: 0
-        width: 589
-        height: 550
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb4f0efd6ceacf640800000000000000
-      internalID: 5115155445968860350
+      spriteID: 71d4b0990d7771280800000000000000
+      internalID: -9072651186510017257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caranguejoBossAtirando_2
+      name: map2_2
       rect:
         serializedVersion: 2
-        x: 1213
-        y: 0
-        width: 589
-        height: 550
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94b1719600a2b20d0800000000000000
-      internalID: -3446614908570494135
+      spriteID: 70cd311082a8d09d0800000000000000
+      internalID: -2806435088360547321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caranguejoBossAtirando_3
+      name: map2_3
       rect:
         serializedVersion: 2
-        x: 1813
-        y: 0
-        width: 579
-        height: 550
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54b0cdf29d4fc2e80800000000000000
-      internalID: -8201911607700485307
+      spriteID: 12c89c4aa5a7c7630800000000000000
+      internalID: 3926147504890547233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caranguejoBossAtirando_4
+      name: map2_4
       rect:
         serializedVersion: 2
-        x: 2403
-        y: 0
-        width: 579
-        height: 550
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +238,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81c16f2b625875270800000000000000
-      internalID: 8239200444555336728
+      spriteID: 54e6fb183225cf5c0800000000000000
+      internalID: -4180376041652523451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map2_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2541e69fd14679bf0800000000000000
+      internalID: -317675168804760494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930bb6feb274eafb0800000000000000
+      internalID: -4634688712491683783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map2_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82cfe753cac82610800000000000000
+      internalID: 1596749008245605003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map2_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f700864488f86aad0800000000000000
+      internalID: -2691305911881301889
       vertices: []
       indices: 
       edges: []
