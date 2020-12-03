@@ -1,37 +1,55 @@
 fileFormatVersion: 2
-guid: 9ad2bccd54872df47ac9d2e52977ff32
+guid: 6febb5a4ea1c64a478201a7f2f3d169d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -201524849516289187
-    second: DemonMageAtackBack_0
+      213: -5471919441875902843
+    second: rangedAttack_0
   - first:
-      213: 2307479480660154856
-    second: DemonMageAtackBack_1
+      213: -263463700929813386
+    second: rangedAttack_1
   - first:
-      213: 6952012399740353723
-    second: DemonMageAtackBack_2
+      213: -391486381812617074
+    second: rangedAttack_2
   - first:
-      213: -7536650865421532994
-    second: DemonMageAtackBack_3
+      213: 8365698886419609583
+    second: rangedAttack_3
   - first:
-      213: -1496843159545513871
-    second: DemonMageAtackBack_4
+      213: -8985923899374948053
+    second: rangedAttack_4
   - first:
-      213: -4421990462213665002
-    second: DemonMageAtackBack_5
+      213: -7498642611979372521
+    second: rangedAttack_5
   - first:
-      213: -5468511167973440804
-    second: DemonMageAtackBack_6
+      213: 4430384930633837641
+    second: rangedAttack_6
   - first:
-      213: 8554798615445355022
-    second: DemonMageAtackBack_7
+      213: -3135327282230025693
+    second: rangedAttack_7
   - first:
-      213: -7507581398508509355
-    second: DemonMageAtackBack_8
+      213: 4877336507774462639
+    second: rangedAttack_8
   - first:
-      213: -6043922432950782580
-    second: DemonMageAtackBack_9
+      213: 8305807570426960415
+    second: rangedAttack_9
+  - first:
+      213: -6519548521309381291
+    second: rangedAttack_10
+  - first:
+      213: 3699703120619838920
+    second: rangedAttack_11
+  - first:
+      213: -4513665771008079052
+    second: rangedAttack_12
+  - first:
+      213: 8761443129467104150
+    second: rangedAttack_13
+  - first:
+      213: -4182776034602161356
+    second: rangedAttack_14
+  - first:
+      213: 7717897309091998181
+    second: rangedAttack_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -143,13 +161,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DemonMageAtackBack_0
+      name: rangedAttack_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 13
-        width: 244
-        height: 204
+        x: 13
+        y: 0
+        width: 175
+        height: 163
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d53ea23973a043df0800000000000000
-      internalID: -201524849516289187
+      spriteID: 58ede635246df04b0800000000000000
+      internalID: -5471919441875902843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonMageAtackBack_1
+      name: rangedAttack_1
       rect:
         serializedVersion: 2
-        x: 313
-        y: 13
-        width: 238
-        height: 204
+        x: 191
+        y: 0
+        width: 180
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e95043bc50d50020800000000000000
-      internalID: 2307479480660154856
+      spriteID: 6746edee82df75cf0800000000000000
+      internalID: -263463700929813386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonMageAtackBack_2
+      name: rangedAttack_2
       rect:
         serializedVersion: 2
-        x: 574
-        y: 14
-        width: 233
-        height: 203
+        x: 376
+        y: 0
+        width: 175
+        height: 163
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbc72a8b1728a7060800000000000000
-      internalID: 6952012399740353723
+      spriteID: e80f7adb539219af0800000000000000
+      internalID: -391486381812617074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonMageAtackBack_3
+      name: rangedAttack_3
       rect:
         serializedVersion: 2
-        x: 828
-        y: 13
-        width: 234
-        height: 204
+        x: 557
+        y: 0
+        width: 177
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb0c86208ff686790800000000000000
-      internalID: -7536650865421532994
+      spriteID: fe7fbe650dee81470800000000000000
+      internalID: 8365698886419609583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonMageAtackBack_4
+      name: rangedAttack_4
       rect:
         serializedVersion: 2
-        x: 1083
-        y: 9
-        width: 239
-        height: 208
+        x: 761
+        y: 0
+        width: 174
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 178f0d6b3152a3be0800000000000000
-      internalID: -1496843159545513871
+      spriteID: b21301fa2d59b4380800000000000000
+      internalID: -8985923899374948053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonMageAtackBack_5
+      name: rangedAttack_5
       rect:
         serializedVersion: 2
-        x: 1343
-        y: 14
-        width: 244
-        height: 218
+        x: 947
+        y: 0
+        width: 173
+        height: 163
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61fc6937a1fe1a2c0800000000000000
-      internalID: -4421990462213665002
+      spriteID: 718bc5f16487fe790800000000000000
+      internalID: -7498642611979372521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonMageAtackBack_6
+      name: rangedAttack_6
       rect:
         serializedVersion: 2
-        x: 1598
-        y: 14
-        width: 248
-        height: 228
+        x: 1129
+        y: 0
+        width: 190
+        height: 177
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,20 +301,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd2cfaee012fb14b0800000000000000
-      internalID: -5468511167973440804
+      spriteID: 94c6ca80f93eb7d30800000000000000
+      internalID: 4430384930633837641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonMageAtackBack_7
+      name: rangedAttack_7
       rect:
         serializedVersion: 2
-        x: 1853
-        y: 13
-        width: 254
-        height: 229
+        x: 1324
+        y: 1
+        width: 198
+        height: 165
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,20 +322,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0abf96f300c8b670800000000000000
-      internalID: 8554798615445355022
+      spriteID: 322a610d2741d74d0800000000000000
+      internalID: -3135327282230025693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonMageAtackBack_8
+      name: rangedAttack_8
       rect:
         serializedVersion: 2
-        x: 2113
-        y: 13
-        width: 259
-        height: 224
+        x: 1524
+        y: 1
+        width: 250
+        height: 165
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,20 +343,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 557e193be76bfc790800000000000000
-      internalID: -7507581398508509355
+      spriteID: faae0fb66b7cfa340800000000000000
+      internalID: 4877336507774462639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonMageAtackBack_9
+      name: rangedAttack_9
       rect:
         serializedVersion: 2
-        x: 2378
-        y: 14
-        width: 254
-        height: 203
+        x: 1776
+        y: 1
+        width: 199
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,8 +364,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8534fdb19caf1ca0800000000000000
-      internalID: -6043922432950782580
+      spriteID: f1a9c00baf7244370800000000000000
+      internalID: 8305807570426960415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedAttack_10
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 1
+        width: 181
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d5e637929e585a0800000000000000
+      internalID: -6519548521309381291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedAttack_11
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1
+        width: 184
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd13f6e26cf75330800000000000000
+      internalID: 3699703120619838920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedAttack_12
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 1
+        width: 211
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b493c45ec3c51c0800000000000000
+      internalID: -4513665771008079052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedAttack_13
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1
+        width: 249
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b6cab2b16e69970800000000000000
+      internalID: 8761443129467104150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedAttack_14
+      rect:
+        serializedVersion: 2
+        x: 2811
+        y: 1
+        width: 199
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b658a9b5bc3f5c0800000000000000
+      internalID: -4182776034602161356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rangedAttack_15
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1
+        width: 181
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e92f5126ba7b1b60800000000000000
+      internalID: 7717897309091998181
       vertices: []
       indices: 
       edges: []

@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour {
         collectedText.text = "Items Collected: " + collectedAmount;
     }
 
-    void Shoot(float horizontal, float vertical) {
+    public void Shoot(float horizontal, float vertical) {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
         bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector3(
