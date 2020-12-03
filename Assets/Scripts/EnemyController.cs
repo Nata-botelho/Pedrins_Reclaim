@@ -14,28 +14,55 @@ public enum EnemyType {
     Ranged
 };
 
+public enum AttackType {
+    Guided,
+    Normal
+}
+
 public class EnemyController : MonoBehaviour
 {
 
+    [System.Serializable]
+    public struct EnemyAttack {
+        public float weight;
+        public AttackType atkType;
+        public float numberOfRedirections;
+        public float redirectionCoolDown;
+        public float bulletSpeed;
+        public Vector2 bulletInitialPos;
+        public float coolDown;
+        public GameObject bulletPrefab;
+        // precisa ?
+        // public Animator attackAnimation;
+    }
+
+    public List<EnemyAttack> listOfAttacks = new List<EnemyAttack>();
+    float totalWeight;
     GameObject player;
     public EnemyState currState = EnemyState.Wander;
     public EnemyType enemyType;
     public float range;
     public float speed;
     public float attackRange;
-    public float bulletSpeed;
-    public Vector2 bulletInitialPos;
+    // public float bulletSpeed;
+    // public Vector2 bulletInitialPos;
     private bool chooseDir = false;
     private bool coolDownAttack = false;
-    public float coolDown;
+    // public float coolDown;
     private Vector3 randomDir;
-    public GameObject bulletPrefab;
+    // public GameObject bulletPrefab;
 
     public Animator animator;
     public Vector2 direction;
     public bool animSpeed, isMoving, isAttacking;
 
-   
+   void Awake() {
+        totalWeight = 0;
+        foreach(var _enemyAttack in listOfAttacks) {
+            totalWeight += _enemyAttack.weight;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -116,7 +143,7 @@ public class EnemyController : MonoBehaviour
             switch (enemyType) {
                 case(EnemyType.Melee):
                     GameController.DamagePlayer(10);
-                    StartCoroutine(CoolDown());
+                    StartCoroutine(CoolDown(3));
                 break;
                 case(EnemyType.Ranged):
 
@@ -127,10 +154,15 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private IEnumerator CoolDown() {
+    private IEnumerator CoolDown(float cd) {
         coolDownAttack = true;
-        yield return new WaitForSeconds(coolDown);
+        yield return new WaitForSeconds(cd);
         coolDownAttack = false;
+    }
+
+    private IEnumerator RedirectionCoolDown(float _coolDown, GameObject projectile) {
+        yield return new WaitForSeconds(_coolDown);
+        projectile.GetComponent<BulletController>().GetPlayer(player.transform);
     }
 
     public void Death() {
@@ -147,11 +179,65 @@ public class EnemyController : MonoBehaviour
     }
 
     public void Shoot(){
-        GameObject bullet = Instantiate(bulletPrefab, (Vector2)this.transform.position + bulletInitialPos, Quaternion.identity) as GameObject;
+        int atkIndex = pickAttack();
+        EnemyAttack choosedAtk = listOfAttacks[atkIndex];
+
+        GameObject bullet = Instantiate(choosedAtk.bulletPrefab, (Vector2)this.transform.position + choosedAtk.bulletInitialPos, Quaternion.identity) as GameObject;
+
+        Vector3 dir = player.transform.position - bullet.transform.position;
+        dir = player.transform.InverseTransformDirection(dir);
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        bullet.transform.eulerAngles = new Vector3(bullet.transform.eulerAngles.x, bullet.transform.eulerAngles.y, angle);
+
         bullet.GetComponent<BulletController>().isEnemyBullet = true;
         bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
         bullet.GetComponent<BulletController>().GetPlayer(player.transform);
-        StartCoroutine(CoolDown());
+
+        // if (choosedAtk.atkType == AttackType.Guided) {
+        //     for (int i = 0; i < choosedAtk.numberOfRedirections; i++) {
+        //         StartCoroutine(RedirectionCoolDown(choosedAtk.redirectionCoolDown*(i+1), bullet));
+        //     }
+        // }
+        switch (choosedAtk.atkType)
+        {
+            case(AttackType.Guided):
+                for (int i = 0; i < choosedAtk.numberOfRedirections; i++) {
+                    StartCoroutine(RedirectionCoolDown(choosedAtk.redirectionCoolDown*(i+1), bullet));
+                }
+            break;
+        }
+
+        StartCoroutine(CoolDown(choosedAtk.coolDown));
         isAttacking = false;
+    }
+
+    // public void GuidedShoot() {
+    //     int atkIndex = pickAttack();
+    //     Attack choosedAtk = listOfAttacks[atkIndex];
+    //     GameObject projectile = Instantiate(choosedAtk.bulletPrefab, (Vector2) this.transform.position + choosedAtk.bulletInitialPos, Quaternion.identity) as GameObject;
+    //     projectile.GetComponent<BulletController>().isEnemyBullet = true;
+    //     projectile.AddComponent<RigidBody2D>().gravityScale = 0;
+    //     projectile.GetComponent<BulletController>().GetPlayer(player.transform);
+
+    //     for (int i = 0; i < choosedAtk.numberOfRedirections; i++) {
+    //         StartCoroutine(RedirectionCoolDown(choosedAtk.redirectionCoolDown*(i+1), projectile));
+    //     }
+
+    //     StartCoroutine(CoolDown());
+    //     isAttacking = false;
+    // }
+
+    // Sorteia um ataque para ser utilizado, retorna seu indice no vetor de ataques
+    private int pickAttack() {
+        float pick = Random.value*totalWeight;
+        int choosenIndex = 0;
+        float cumulativeWeight = listOfAttacks[0].weight;
+
+        while (pick > cumulativeWeight && choosenIndex < listOfAttacks.Count -1 ) {
+            choosenIndex++;
+            cumulativeWeight += listOfAttacks[choosenIndex].weight;
+        }
+
+        return choosenIndex;
     }
 }

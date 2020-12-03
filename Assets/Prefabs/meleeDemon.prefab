@@ -131,16 +131,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ffaa1a2dcd66f44bf0678da29e33ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listOfAttacks: []
   currState: 0
   enemyType: 0
   range: 10
   speed: 1
   attackRange: 1
-  bulletSpeed: 0
-  coolDown: 2
-  bulletPrefab: {fileID: 9203748386609312464, guid: a3028f5c1e820e64bb912d0da367fd0a, type: 3}
   animator: {fileID: 5069012429014544996}
   direction: {x: 0, y: 0}
+  animSpeed: 0
+  isMoving: 0
+  isAttacking: 0
 --- !u!222 &5069012429014544997
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -295,6 +296,10 @@ PrefabInstance:
     - target: {fileID: 6759997253346994112, guid: e6a5b84a629da5149a998c7ff0a55018, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 72.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6929726221370501072, guid: e6a5b84a629da5149a998c7ff0a55018, type: 3}
+      propertyPath: maxHp
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 7325202569309239598, guid: e6a5b84a629da5149a998c7ff0a55018, type: 3}
       propertyPath: m_Name

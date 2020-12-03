@@ -33,7 +33,18 @@ public class BulletController : MonoBehaviour
     }
 
     public void GetPlayer(Transform player) {
+
+        // Vector3 randomDir = new Vector3(0, 0, Random.Range(0, 360));
+        // Quaternion nextRotation = Quaternion.Euler(randomDir);
+        // Vector3 dir = player.transform.position - transform.position;
+        // dir = player.transform.InverseTransformDirection(dir);
+        // float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        // transform.eulerAngles.z = angle;
+        
+
+        
         playerPos = player.position;
+
     }
 
     IEnumerator DeathDelay() {

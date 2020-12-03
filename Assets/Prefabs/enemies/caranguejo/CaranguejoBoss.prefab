@@ -60,7 +60,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 3.8899999, y: 5.506592}
-    newSize: {x: 0.85, y: 1.13}
+    newSize: {x: 3.8899999, y: 5.506592}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -260,7 +260,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.85, y: 1.13}
+  m_Size: {x: 3.8899999, y: 5.506592}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -278,15 +278,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ffaa1a2dcd66f44bf0678da29e33ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listOfAttacks:
+  - weight: 0.9
+    atkType: 1
+    numberOfRedirections: 0
+    redirectionCoolDown: 0
+    bulletSpeed: 2
+    bulletInitialPos: {x: -2, y: 2}
+    coolDown: 5
+    bulletPrefab: {fileID: 2223827450312700134, guid: c6ea7b37a3b9b9b4ba7e7eaff8827547, type: 3}
+  - weight: 0.1
+    atkType: 0
+    numberOfRedirections: 2
+    redirectionCoolDown: 1
+    bulletSpeed: 2
+    bulletInitialPos: {x: -2, y: 2}
+    coolDown: 5
+    bulletPrefab: {fileID: 3483100363921802838, guid: 8b70b613db8ebcf4cad919ed2e6ed0e6, type: 3}
   currState: 0
   enemyType: 1
   range: 15
   speed: 1
   attackRange: 7
-  bulletSpeed: 2
-  bulletInitialPos: {x: -2, y: 0.5}
-  coolDown: 2
-  bulletPrefab: {fileID: 2223827450312700134, guid: c6ea7b37a3b9b9b4ba7e7eaff8827547, type: 3}
   animator: {fileID: 2946630577289839086}
   direction: {x: 0, y: 0}
   animSpeed: 0
@@ -462,6 +475,10 @@ PrefabInstance:
     - target: {fileID: 6759997253346994112, guid: e6a5b84a629da5149a998c7ff0a55018, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0.60036206
+      objectReference: {fileID: 0}
+    - target: {fileID: 6929726221370501072, guid: e6a5b84a629da5149a998c7ff0a55018, type: 3}
+      propertyPath: maxHp
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 7325202569309239598, guid: e6a5b84a629da5149a998c7ff0a55018, type: 3}
       propertyPath: m_Name

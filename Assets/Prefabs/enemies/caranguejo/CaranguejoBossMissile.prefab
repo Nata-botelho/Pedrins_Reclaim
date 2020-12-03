@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3261541630356491954}
   - component: {fileID: 1941926914797919299}
   - component: {fileID: 3976365545265988268}
-  - component: {fileID: 5529977998007471776}
+  - component: {fileID: 7500408122743654910}
   m_Layer: 0
   m_Name: CaranguejoBossMissile
   m_TagString: Untagged
@@ -98,16 +98,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &5529977998007471776
-BoxCollider:
+--- !u!61 &7500408122743654910
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3483100363921802838}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.87}
+    newSize: {x: 0.32, y: 0.87}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25351351, y: 0.6776361, z: 0.2}
-  m_Center: {x: 0.0047490373, y: 0.09618196, z: 0}
+  m_Size: {x: 0.32, y: 0.87}
+  m_EdgeRadius: 0
