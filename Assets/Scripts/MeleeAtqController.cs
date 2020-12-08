@@ -24,7 +24,9 @@ public class MeleeAtqController : MonoBehaviour
                 playerAnimator.SetBool("isAttacking", true);
                 RaycastHit2D hit = Physics2D.Raycast(player.transform.position, direction, attackRange, enemiesLayer);
                 if(hit.collider){
-                    hit.collider.GetComponent<EnemyController>().Death();
+                    hit.collider.GetComponentInChildren<HealthBarController>().hp -= 50;
+                    if (hit.collider.GetComponentInChildren<HealthBarController>().hp < 1) 
+                        hit.collider.gameObject.GetComponent<EnemyController>().Death();
                 }
                 attackTime = defaultAttackTime;   
             }
