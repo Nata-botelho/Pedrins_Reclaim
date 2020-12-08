@@ -162,6 +162,10 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator RedirectionCoolDown(float _coolDown, GameObject projectile) {
         yield return new WaitForSeconds(_coolDown);
+        Vector3 dir = player.transform.position - projectile.transform.position;
+        dir = player.transform.InverseTransformDirection(dir);
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        projectile.transform.eulerAngles = new Vector3(projectile.transform.eulerAngles.x, projectile.transform.eulerAngles.y, angle-90);
         projectile.GetComponent<BulletController>().GetPlayer(player.transform);
     }
 
@@ -187,7 +191,7 @@ public class EnemyController : MonoBehaviour
         Vector3 dir = player.transform.position - bullet.transform.position;
         dir = player.transform.InverseTransformDirection(dir);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        bullet.transform.eulerAngles = new Vector3(bullet.transform.eulerAngles.x, bullet.transform.eulerAngles.y, angle);
+        bullet.transform.eulerAngles = new Vector3(bullet.transform.eulerAngles.x, bullet.transform.eulerAngles.y, angle-90);
 
         bullet.GetComponent<BulletController>().isEnemyBullet = true;
         bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
