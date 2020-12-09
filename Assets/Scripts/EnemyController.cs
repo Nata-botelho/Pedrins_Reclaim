@@ -135,9 +135,10 @@ public class EnemyController : MonoBehaviour
     }
 
     void Attack() {
-        isMoving = false;
-        isAttacking = true;
         if (!coolDownAttack) {
+            isMoving = false;
+            isAttacking = true;
+            animator.SetTrigger("attack");
             // GameController.DamagePlayer(10);
             // StartCoroutine(CoolDown());
             switch (enemyType) {
@@ -156,6 +157,7 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator CoolDown(float cd) {
         coolDownAttack = true;
+        isAttacking = false;
         yield return new WaitForSeconds(cd);
         coolDownAttack = false;
     }
@@ -180,6 +182,7 @@ public class EnemyController : MonoBehaviour
         animator.SetFloat("y", direction.y);
         animator.SetBool("moving", isMoving);
         animator.SetBool("attacking", isAttacking);
+        animator.SetBool("atqcooldown", coolDownAttack);
     }
 
     public void Shoot(){
