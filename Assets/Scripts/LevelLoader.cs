@@ -47,4 +47,8 @@ public class LevelLoader : MonoBehaviour
         // Load scene
         SceneManager.LoadScene(levelIndex);
     }
+
+    public void Quit() {
+        Application.Quit();
+    }
 }

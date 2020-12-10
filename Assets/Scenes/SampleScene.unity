@@ -1204,6 +1204,11 @@ MonoBehaviour:
     - gameObject: {fileID: 369934677529828792, guid: c396bf04d83d67a4fbc0a5b6de83e3b6, type: 3}
     count: 1
     rate: 1
+  - name: Quarta  Wave
+    enemies:
+    - gameObject: {fileID: 3040787353348551245, guid: 8c884f8686d238b44904328e92055014, type: 3}
+    count: 1
+    rate: 1
   spawnPoints:
   - {fileID: 536444471}
   - {fileID: 946451075}
