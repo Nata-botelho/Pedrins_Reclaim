@@ -73,14 +73,6 @@ public class GameController : MonoBehaviour
 
     private static void KillPlayer() {
         Debug.Log("PLayer got Killed");
-        Restart();
-    }
-
-    static void Restart() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-    }
-
-    public void CompleteLevel() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        GameObject.Find("LevelLoader").GetComponent<LevelLoader>().LoadDeath();
     }
 }
