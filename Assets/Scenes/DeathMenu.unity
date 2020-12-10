@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 9528145}
   - component: {fileID: 9528144}
   m_Layer: 5
-  m_Name: OptionsButton
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,10 +205,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 989970541}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 582902433}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -216,18 +216,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 473154194}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &9528145
 MonoBehaviour:
@@ -348,7 +336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &291683406
 GameObject:
@@ -384,8 +372,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -8, y: 0}
+  m_SizeDelta: {x: 574.4947, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &291683408
 MonoBehaviour:
@@ -407,7 +395,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SAIR
+  m_text: VOLTAR AO MENU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -803,6 +791,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500766021}
   m_CullTransparentMesh: 0
+--- !u!114 &582902433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6621813974499319120, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+  m_PrefabInstance: {fileID: 1287606155}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116a07945f3acb947bee9e85fc83be67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &589610438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,7 +1230,7 @@ RectTransform:
   - {fileID: 589610441}
   - {fileID: 473154196}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1270,7 +1269,7 @@ RectTransform:
   - {fileID: 1153639580}
   - {fileID: 322785608}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1611,6 +1610,71 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1287606155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144300020941929489, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955978986015721980, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621813974499319120, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1614871725}
+    - target: {fileID: 7414070988014892828, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
 --- !u!1 &1302999782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,6 +2005,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613960685}
   m_CullTransparentMesh: 0
+--- !u!95 &1614871725 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6936340106672239837, guid: ce51b0b0d73df5e47b5587e5a7b95a9e, type: 3}
+  m_PrefabInstance: {fileID: 1287606155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1635103055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,7 +2098,7 @@ GameObject:
   - component: {fileID: 1981361083}
   - component: {fileID: 1981361082}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: BackToMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2052,8 +2121,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: -147}
-  m_SizeDelta: {x: 278.62756, y: 97.70892}
+  m_AnchoredPosition: {x: 13, y: -153}
+  m_SizeDelta: {x: 898.18713, y: 97.70892}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981361082
 MonoBehaviour:
@@ -2098,9 +2167,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 473154195}
-        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 582902433}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

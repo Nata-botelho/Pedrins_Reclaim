@@ -23,6 +23,15 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(2));
     }
 
+    public void LoadStart() {
+        StartCoroutine(LoadLevel(0));
+    }
+
+    public void LoadGame() {
+        StartCoroutine(LoadLevel(1));
+    }
+
+    // N funcionou por algum motivo
     public void LoadScene(string name) {
         StartCoroutine(LoadLevel(SceneManager.GetSceneByName(name).buildIndex));
     }
