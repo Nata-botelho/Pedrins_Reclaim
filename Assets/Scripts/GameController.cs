@@ -81,7 +81,6 @@ public class GameController : MonoBehaviour
     }
 
     public void CompleteLevel() {
-        Debug.Log("Level WONNNN !!!!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // https://www.youtube.com/watch?v=Vrld13ypX_I&ab_channel=Brackeys => Fazendo Spawn de Waves (Parte 1 e 2)
 
@@ -15,7 +16,8 @@ public class WaveSpawner : MonoBehaviour
     [System.Serializable]
     public class Wave {
         public string name;
-        public Transform enemy;
+        // public Transform enemy;
+        public Enemy[] enemies;
         public int count;
         public float rate;
     }
@@ -23,11 +25,6 @@ public class WaveSpawner : MonoBehaviour
     [System.Serializable]
     public class Enemy {
         public GameObject gameObject;
-        public float weight;
-    }
-
-    public class Boss {
-        
     }
 
     public Wave[] waves;
@@ -38,7 +35,8 @@ public class WaveSpawner : MonoBehaviour
     public float timeBetweenWaves = 5f;
     public float waveCountdown;
 
-    private float searchCountdown = 1f;
+    public float searchCountdown = 1f;
+    public GameObject LevelLoader;
 
     public SpawnState state = SpawnState.COUNTING;
     void Start() {
@@ -74,6 +72,8 @@ public class WaveSpawner : MonoBehaviour
         if (nextWave+1 > waves.Length-1) {
             // Load Next Level ?
             nextWave = 0;
+            LevelLoader.GetComponent<LevelLoader>().LoadNextLevel();
+
             Debug.Log("All waves completed, Looping");
         } else {
             nextWave++;
@@ -84,11 +84,13 @@ public class WaveSpawner : MonoBehaviour
         searchCountdown -= Time.deltaTime;
         if (searchCountdown <= 0f) {
             searchCountdown = 1f;
-            if (GameObject.FindGameObjectWithTag("Enemy") == null && GameObject.FindGameObjectWithTag("Boss") == null) {
+            int numberOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+            int numberOfBosses = GameObject.FindGameObjectsWithTag("Boss").Length;
+            if (numberOfEnemies == 0 & numberOfBosses == 0) {
                 return false;
             }    
         }
-        return false;
+        return true;
     }
 
     IEnumerator SpawnWave(Wave _wave) {
@@ -97,7 +99,7 @@ public class WaveSpawner : MonoBehaviour
         
         // Spawn
         for (int i = 0; i < _wave.count; i++) {
-            SpawnEnemy(_wave.enemy);
+            SpawnEnemy(_wave.enemies);
             yield return new WaitForSeconds(1f/_wave.rate);
         }
 
@@ -105,13 +107,14 @@ public class WaveSpawner : MonoBehaviour
         yield break;
     }
 
-    void SpawnEnemy(Transform _enemy) {
+    void SpawnEnemy(Enemy[] enemies) {
         // Spawn enemy
-        Debug.Log("Spawning Enemy: " + _enemy.name);
+        int pos = Random.Range(0, enemies.Length-1);
+        Debug.Log("Spawning Enemy...");
         if (spawnPoints.Length == 0) {
             Debug.LogError("No spawn points referenced");
         }
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        Instantiate(_enemy, _sp.position, _sp.rotation);
+        Instantiate(enemies[pos].gameObject, _sp.position, _sp.rotation);
     }
 }
