@@ -72,7 +72,7 @@ public class WaveSpawner : MonoBehaviour
         if (nextWave+1 > waves.Length-1) {
             // Load Next Level ?
             nextWave = 0;
-            LevelLoader.GetComponent<LevelLoader>().LoadNextLevel();
+            LevelLoader.GetComponent<LevelLoader>().LoadWin();
 
             Debug.Log("All waves completed, Looping");
         } else {
