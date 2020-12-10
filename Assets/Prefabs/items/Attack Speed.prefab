@@ -118,5 +118,5 @@ MonoBehaviour:
     itemImage: {fileID: 21300000, guid: c5cf534c5cb2a2d45b4bcbaf3d4d4f83, type: 3}
   healthChange: 0
   moveSpeedChange: 0
-  attackSpeedChange: 0.2
+  attackSpeedChange: 0.03
   bulletSizeChange: 0

@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listOfAttacks:
+<<<<<<< HEAD
   - weight: 0.7
     atkType: 1
     numberOfRedirections: 0
@@ -115,17 +116,20 @@ MonoBehaviour:
     coolDown: 5
     bulletPrefab: {fileID: 5302395875643586918, guid: b7eaddd511e5235498569fd59c0d3a77, type: 3}
   - weight: 0.3
+=======
+  - weight: 1
+>>>>>>> e086685df121e752cfcbb75fbcbc4cb1418de6bf
     atkType: 0
-    numberOfRedirections: 2
-    redirectionCoolDown: 1
-    bulletSpeed: 2
+    numberOfRedirections: 4
+    redirectionCoolDown: 0.5
+    bulletSpeed: 3
     bulletInitialPos: {x: 0, y: 0}
     coolDown: 5
-    bulletPrefab: {fileID: 3483100363921802838, guid: 8b70b613db8ebcf4cad919ed2e6ed0e6, type: 3}
+    bulletPrefab: {fileID: 5302395875643586918, guid: b7eaddd511e5235498569fd59c0d3a77, type: 3}
   currState: 0
   enemyType: 1
   range: 15
-  speed: 1
+  speed: 3
   attackRange: 7
   animator: {fileID: 0}
   direction: {x: 0, y: 0}

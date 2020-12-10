@@ -24,6 +24,7 @@ public class VideoController: MonoBehaviour
 
     // https://docs.unity3d.com/Manual/class-VideoPlayer.html Dar play no video quando quiser
     public void PlayIntro() {
+        canvas.active = false;
         VideoPlayer.Play();
     }
 

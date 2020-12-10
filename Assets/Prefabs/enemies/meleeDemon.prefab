@@ -135,7 +135,7 @@ MonoBehaviour:
   currState: 0
   enemyType: 0
   range: 10
-  speed: 1
+  speed: 2.5
   attackRange: 1
   animator: {fileID: 5069012429014544996}
   direction: {x: 0, y: 0}
