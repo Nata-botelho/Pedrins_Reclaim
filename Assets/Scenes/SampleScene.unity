@@ -238,7 +238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -843, y: 459.14}
+  m_AnchoredPosition: {x: -877.2, y: 554.9}
   m_SizeDelta: {x: 200.2238, y: 60.75177}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251504804
@@ -634,7 +634,7 @@ GameObject:
   - component: {fileID: 707380059}
   m_Layer: 0
   m_Name: RolingFireTrap
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -684,7 +684,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3, y: 0.48}
+  m_Size: {x: 3.4708471, y: 3.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -741,7 +741,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 3.4708471, y: 3.48}
-    newSize: {x: 3, y: 0.48}
+    newSize: {x: 3.4708471, y: 3.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -971,7 +971,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707380053}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 7fe356cbc7f230d4192cbfc4f429d69e, type: 2}
   m_CullingMode: 0
@@ -1192,19 +1192,84 @@ MonoBehaviour:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     count: 3
-    rate: 1
+    rate: 0.5
   - name: Segunda Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
-    count: 6
-    rate: 1
+    count: 4
+    rate: 0.5
   - name: Terceira Wave
+    enemies:
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    count: 5
+    rate: 0.5
+  - name: Quarta  Wave
+    enemies:
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    count: 6
+    rate: 0.5
+  - name: Quinta  Wave
     enemies:
     - gameObject: {fileID: 369934677529828792, guid: c396bf04d83d67a4fbc0a5b6de83e3b6, type: 3}
     count: 1
     rate: 1
-  - name: Quarta  Wave
+  - name: Sexta  Wave
+    enemies:
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    count: 8
+    rate: 0.5
+  - name: Setima Wave
+    enemies:
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    count: 9
+    rate: 0.5
+  - name: Oitava  Wave
+    enemies:
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    count: 10
+    rate: 0.5
+  - name: Nona  Wave
+    enemies:
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    count: 11
+    rate: 0.5
+  - name: Decima  Wave
+    enemies:
+    - gameObject: {fileID: 3040787353348551245, guid: 8c884f8686d238b44904328e92055014, type: 3}
+    count: 1
+    rate: 1
+  - name: Decima Primeira  Wave
+    enemies:
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    count: 13
+    rate: 0.5
+  - name: Decima Segunda  Wave
+    enemies:
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    count: 14
+    rate: 0.5
+  - name: Decima Terceira  Wave
+    enemies:
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    count: 15
+    rate: 0.5
+  - name: Decima Quarta  Wave
+    enemies:
+    - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    count: 16
+    rate: 0.25
+  - name: Decima Quinta  Wave
     enemies:
     - gameObject: {fileID: 3040787353348551245, guid: 8c884f8686d238b44904328e92055014, type: 3}
     count: 1
@@ -1245,7 +1310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924477932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 604538149}
@@ -4506,7 +4571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594653055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 604538149}
@@ -5414,7 +5479,7 @@ GameObject:
   - component: {fileID: 1677610513}
   m_Layer: 0
   m_Name: RotationalTrap
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
