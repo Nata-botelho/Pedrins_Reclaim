@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listOfAttacks: []
-  currState: 0
+  currState: 1
   enemyType: 0
   range: 10
   speed: 2.5

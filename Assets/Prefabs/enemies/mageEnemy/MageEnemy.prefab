@@ -140,7 +140,7 @@ MonoBehaviour:
     bulletInitialPos: {x: -0.8, y: 0.7}
     coolDown: 0.2
     bulletPrefab: {fileID: 9203748386609312464, guid: a3028f5c1e820e64bb912d0da367fd0a, type: 3}
-  currState: 0
+  currState: 1
   enemyType: 1
   range: 10
   speed: 2

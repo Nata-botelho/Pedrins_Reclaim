@@ -47,6 +47,48 @@ TextureImporter:
   - first:
       213: -1176773730054710429
     second: witchAtacking_14
+  - first:
+      213: 6416481190382991100
+    second: witchAtacking_0
+  - first:
+      213: -9176224469092035317
+    second: witchAtacking_1
+  - first:
+      213: -6932587705469588181
+    second: witchAtacking_2
+  - first:
+      213: -9177494419454205418
+    second: witchAtacking_3
+  - first:
+      213: -6348222834128540292
+    second: witchAtacking_4
+  - first:
+      213: -4061435231342307571
+    second: witchAtacking_5
+  - first:
+      213: 7151281357148741643
+    second: witchAtacking_6
+  - first:
+      213: -4044314407681906774
+    second: witchAtacking_7
+  - first:
+      213: 3144768243862325554
+    second: witchAtacking_8
+  - first:
+      213: 5398935020415339446
+    second: witchAtacking_9
+  - first:
+      213: 5324769640188847060
+    second: witchAtacking_10
+  - first:
+      213: 7717935265944804716
+    second: witchAtacking_11
+  - first:
+      213: -3318659300401869149
+    second: witchAtacking_12
+  - first:
+      213: -6089594174709123044
+    second: witchAtacking_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -172,8 +214,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e8ae5d560b8dd910800000000000000
-      internalID: 1863798680253802723
+      spriteID: cf6f0cc85abeb0950800000000000000
+      internalID: 6416481190382991100
       vertices: []
       indices: 
       edges: []
@@ -193,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8564af0082851a320800000000000000
-      internalID: 2567430191416231512
+      spriteID: b05958c867087a080800000000000000
+      internalID: -9176224469092035317
       vertices: []
       indices: 
       edges: []
@@ -214,8 +256,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 055512f8533288f00800000000000000
-      internalID: 1119183220343133520
+      spriteID: b2dae3956308acf90800000000000000
+      internalID: -6932587705469588181
       vertices: []
       indices: 
       edges: []
@@ -235,8 +277,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c70ea71f1fbd7870800000000000000
-      internalID: 8682305796902356936
+      spriteID: 6126d40337df2a080800000000000000
+      internalID: -9177494419454205418
       vertices: []
       indices: 
       edges: []
@@ -256,8 +298,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ace02dc2cabf1670800000000000000
-      internalID: 8511727166581435556
+      spriteID: c7daeb877f496e7a0800000000000000
+      internalID: -6348222834128540292
       vertices: []
       indices: 
       edges: []
@@ -277,8 +319,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08381e460c4bec260800000000000000
-      internalID: 7119826799338554240
+      spriteID: d07d59dec22e2a7c0800000000000000
+      internalID: -4061435231342307571
       vertices: []
       indices: 
       edges: []
@@ -298,8 +340,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0f4bc02df76f7280800000000000000
-      internalID: -9043395189862084849
+      spriteID: b0069b551847e3360800000000000000
+      internalID: 7151281357148741643
       vertices: []
       indices: 
       edges: []
@@ -319,8 +361,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6991f9184bb888f40800000000000000
-      internalID: 5730984133214017942
+      spriteID: aa720225975bfd7c0800000000000000
+      internalID: -4044314407681906774
       vertices: []
       indices: 
       edges: []
@@ -340,8 +382,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0acc0757d29f868c0800000000000000
-      internalID: -4005677894906884960
+      spriteID: 239c75c5e0674ab20800000000000000
+      internalID: 3144768243862325554
       vertices: []
       indices: 
       edges: []
@@ -361,8 +403,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ffa0e50b1c4e6360800000000000000
-      internalID: 7164747736139476976
+      spriteID: 6bbc549dbcedcea40800000000000000
+      internalID: 5398935020415339446
       vertices: []
       indices: 
       edges: []
@@ -382,8 +424,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a2d652acd5043e20800000000000000
-      internalID: 3329292469708182185
+      spriteID: 4d3ad32a6c165e940800000000000000
+      internalID: 5324769640188847060
       vertices: []
       indices: 
       edges: []
@@ -403,8 +445,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 407fed16d6e99dea0800000000000000
-      internalID: -5847468448533252348
+      spriteID: c6d9916ab3d9b1b60800000000000000
+      internalID: 7717935265944804716
       vertices: []
       indices: 
       edges: []
@@ -424,29 +466,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6da296a82a4c30d0800000000000000
-      internalID: -3441794476764123797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: witchAtacking_13
-      rect:
-        serializedVersion: 2
-        x: 548
-        y: 41
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33c6de9c5a5d15a20800000000000000
-      internalID: 3049453330740636723
+      spriteID: 3ae000503f0c1f1d0800000000000000
+      internalID: -3318659300401869149
       vertices: []
       indices: 
       edges: []
@@ -455,9 +476,9 @@ TextureImporter:
       name: witchAtacking_14
       rect:
         serializedVersion: 2
-        x: 560
+        x: 548
         y: 8
-        width: 30
+        width: 42
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -466,8 +487,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36bd31ff6824bafe0800000000000000
-      internalID: -1176773730054710429
+      spriteID: c18bc26bc5a6d7ba0800000000000000
+      internalID: -6089594174709123044
       vertices: []
       indices: 
       edges: []

@@ -139,17 +139,17 @@ public class EnemyController : MonoBehaviour
             isMoving = false;
             isAttacking = true;
 
-            int atkIndex = pickAttack();
-            animator.SetTrigger("attack"+atkIndex);
-
             switch (enemyType) {
                 case(EnemyType.Melee):
+                    animator.SetTrigger("attack");
                     GameController.DamagePlayer(10);
                     StartCoroutine(CoolDown(3));
                 break;
                 case(EnemyType.Ranged):
-        
-                    
+                    int atkIndex = pickAttack();
+                    for(int i=0; i<listOfAttacks.Count; i++)
+                        animator.ResetTrigger("attack"+i);
+                    animator.SetTrigger("attack"+atkIndex);
                 break;
             }
             
