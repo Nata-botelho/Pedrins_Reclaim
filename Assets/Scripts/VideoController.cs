@@ -9,16 +9,21 @@ using UnityEngine.SceneManagement;
 public class VideoController: MonoBehaviour
 { 
     public VideoPlayer VideoPlayer; // Drag & Drop the GameObject holding the VideoPlayer component
-    public string SceneName;
-
+    public GameObject canvas;
+    public bool isEnd;
+    
     void Start() 
     {
-          VideoPlayer.loopPointReached += LoadScene;
+          if (isEnd) {
+            //   GameObject.Find("Canvas").active = false;
+              VideoPlayer.loopPointReached += LoadWin;
+          } else {
+              VideoPlayer.loopPointReached += LoadScene;
+          }
     }
 
     // https://docs.unity3d.com/Manual/class-VideoPlayer.html Dar play no video quando quiser
     public void PlayIntro() {
-        GameObject.Find("Canvas").active = false;
         VideoPlayer.Play();
     }
 
@@ -27,5 +32,9 @@ public class VideoController: MonoBehaviour
         GameObject.Find("LevelLoader").GetComponent<LevelLoader>().LoadNextLevel();
     }
 
+    void  LoadWin(VideoPlayer vp) {
+        GameObject.Find("Outro").active = false;
+        canvas.active = true;
+    }
 
 }

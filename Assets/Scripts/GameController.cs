@@ -74,5 +74,9 @@ public class GameController : MonoBehaviour
     private static void KillPlayer() {
         Debug.Log("PLayer got Killed");
         GameObject.Find("LevelLoader").GetComponent<LevelLoader>().LoadDeath();
+        health = 100;
+        moveSpeed = 5f; // Erro dizendo que já existe isso no GameController
+        fireRate = 0.05f;
+        bulletSize = 0.5f;
     }
 }

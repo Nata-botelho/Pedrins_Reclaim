@@ -109,7 +109,7 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnEnemy(Enemy[] enemies) {
         // Spawn enemy
-        int pos = Random.Range(0, enemies.Length-1);
+        int pos = Random.Range(0, enemies.Length);
         Debug.Log("Spawning Enemy...");
         if (spawnPoints.Length == 0) {
             Debug.LogError("No spawn points referenced");
