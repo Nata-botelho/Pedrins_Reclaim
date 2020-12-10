@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: e09a12577d42be04c9345c6cfc3e98a1
+guid: ff775b4372c04d54ba7956d4e75188e7
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -419382431210220549
-    second: caranguejoBossProjetilNormal - Copy_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +47,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 8, y: 56, z: 229, w: 140}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -114,28 +111,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: caranguejoBossProjetilNormal - Copy_0
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 58
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf3dcaa96ed0e2af0800000000000000
-      internalID: -419382431210220549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

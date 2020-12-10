@@ -90,7 +90,7 @@ public class EnemyController : MonoBehaviour
         if (isPlayerInRange(range) && currState != EnemyState.Die) {
             currState = EnemyState.Follow;
         } else if (!isPlayerInRange(range) && currState != EnemyState.Die) {
-            currState = EnemyState.Wander;
+            //currState = EnemyState.Wander;
         }
         if (isPlayerInRange(attackRange)) {
             currState = EnemyState.Attack;
@@ -138,16 +138,17 @@ public class EnemyController : MonoBehaviour
         if (!coolDownAttack) {
             isMoving = false;
             isAttacking = true;
-            animator.SetTrigger("attack");
-            // GameController.DamagePlayer(10);
-            // StartCoroutine(CoolDown());
+
+            int atkIndex = pickAttack();
+            animator.SetTrigger("attack"+atkIndex);
+
             switch (enemyType) {
                 case(EnemyType.Melee):
                     GameController.DamagePlayer(10);
                     StartCoroutine(CoolDown(3));
                 break;
                 case(EnemyType.Ranged):
-
+        
                     
                 break;
             }
@@ -164,11 +165,13 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator RedirectionCoolDown(float _coolDown, GameObject projectile) {
         yield return new WaitForSeconds(_coolDown);
-        Vector3 dir = player.transform.position - projectile.transform.position;
-        dir = player.transform.InverseTransformDirection(dir);
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        projectile.transform.eulerAngles = new Vector3(projectile.transform.eulerAngles.x, projectile.transform.eulerAngles.y, angle-90);
-        projectile.GetComponent<BulletController>().GetPlayer(player.transform);
+        if(projectile){
+            Vector3 dir = player.transform.position - projectile.transform.position;
+            dir = player.transform.InverseTransformDirection(dir);
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            projectile.transform.eulerAngles = new Vector3(projectile.transform.eulerAngles.x, projectile.transform.eulerAngles.y, angle);
+            projectile.GetComponent<BulletController>().GetPlayer(player.transform);
+        }
     }
 
     public void Death() {
@@ -182,11 +185,10 @@ public class EnemyController : MonoBehaviour
         animator.SetFloat("y", direction.y);
         animator.SetBool("moving", isMoving);
         animator.SetBool("attacking", isAttacking);
-        animator.SetBool("atqcooldown", coolDownAttack);
     }
 
-    public void Shoot(){
-        int atkIndex = pickAttack();
+    public void Shoot(int atkIndex){
+        //int atkIndex = pickAttack();
         EnemyAttack choosedAtk = listOfAttacks[atkIndex];
 
         GameObject bullet = Instantiate(choosedAtk.bulletPrefab, (Vector2)this.transform.position + choosedAtk.bulletInitialPos, Quaternion.identity) as GameObject;
@@ -194,7 +196,7 @@ public class EnemyController : MonoBehaviour
         Vector3 dir = player.transform.position - bullet.transform.position;
         dir = player.transform.InverseTransformDirection(dir);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        bullet.transform.eulerAngles = new Vector3(bullet.transform.eulerAngles.x, bullet.transform.eulerAngles.y, angle-90);
+        bullet.transform.eulerAngles = new Vector3(bullet.transform.eulerAngles.x, bullet.transform.eulerAngles.y, angle);
 
         bullet.GetComponent<BulletController>().isEnemyBullet = true;
         bullet.AddComponent<Rigidbody2D>().gravityScale = 0;

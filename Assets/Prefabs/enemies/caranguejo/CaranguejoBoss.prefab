@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 369934677529828799}
   - component: {fileID: 369934677529828796}
   - component: {fileID: 2946630577289839086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CaranguejoBoss
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -6, y: 4}
   m_SizeDelta: {x: 3.8899999, y: 5.506592}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!60 &-8184329982551768971
@@ -284,16 +284,16 @@ MonoBehaviour:
     numberOfRedirections: 0
     redirectionCoolDown: 0
     bulletSpeed: 2
-    bulletInitialPos: {x: 0, y: 0}
-    coolDown: 5
+    bulletInitialPos: {x: -1, y: 0.4}
+    coolDown: 0.2
     bulletPrefab: {fileID: 2223827450312700134, guid: c6ea7b37a3b9b9b4ba7e7eaff8827547, type: 3}
   - weight: 0.3
     atkType: 0
     numberOfRedirections: 2
     redirectionCoolDown: 1
     bulletSpeed: 2
-    bulletInitialPos: {x: 0, y: 0}
-    coolDown: 5
+    bulletInitialPos: {x: -2, y: 0}
+    coolDown: 0.2
     bulletPrefab: {fileID: 3483100363921802838, guid: 8b70b613db8ebcf4cad919ed2e6ed0e6, type: 3}
   currState: 0
   enemyType: 1

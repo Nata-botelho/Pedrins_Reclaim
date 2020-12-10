@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: eb66cfb08d609a34c94a8b6d2a1af972
+guid: 70cb5666cb56d6945a50d21574b33475
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4233916778163107010
-    second: SpriteSheetRoolingFireTrap_0
+      213: 8436834530968119250
+    second: SpriteSheetCrabEnemyMissileBoxeGlove_0
   - first:
-      213: 4764483624955737924
-    second: SpriteSheetRoolingFireTrap_1
+      213: -4536409619785497519
+    second: SpriteSheetCrabEnemyMissileBoxeGlove_1
   - first:
-      213: 7261681597137527735
-    second: SpriteSheetRoolingFireTrap_2
+      213: 7191409070101636002
+    second: SpriteSheetCrabEnemyMissileBoxeGlove_2
   - first:
-      213: -6591755788630254612
-    second: SpriteSheetRoolingFireTrap_3
-  - first:
-      213: -6353829851005046844
-    second: SpriteSheetRoolingFireTrap_4
-  - first:
-      213: -456626724317747219
-    second: SpriteSheetRoolingFireTrap_5
+      213: -3548848346197758666
+    second: SpriteSheetCrabEnemyMissileBoxeGlove_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -131,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_0
+      name: SpriteSheetCrabEnemyMissileBoxeGlove_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 79
-        width: 347
-        height: 348
+        x: 23
+        y: 0
+        width: 389
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c47af2a0e4e1ca30800000000000000
-      internalID: 4233916778163107010
+      spriteID: 2d7aa1f3e48a51570800000000000000
+      internalID: 8436834530968119250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_1
+      name: SpriteSheetCrabEnemyMissileBoxeGlove_1
       rect:
         serializedVersion: 2
-        x: 363
-        y: 79
-        width: 349
-        height: 348
+        x: 433
+        y: 0
+        width: 388
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 447f6a31d98de1240800000000000000
-      internalID: 4764483624955737924
+      spriteID: 15445095c7f6b01c0800000000000000
+      internalID: -4536409619785497519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_2
+      name: SpriteSheetCrabEnemyMissileBoxeGlove_2
       rect:
         serializedVersion: 2
-        x: 718
-        y: 79
-        width: 349
-        height: 348
+        x: 843
+        y: 0
+        width: 389
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b3af5540fca6c460800000000000000
-      internalID: 7261681597137527735
+      spriteID: 2a32ee192740dc360800000000000000
+      internalID: 7191409070101636002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_3
+      name: SpriteSheetCrabEnemyMissileBoxeGlove_3
       rect:
         serializedVersion: 2
-        x: 1074
-        y: 79
-        width: 348
-        height: 348
+        x: 1253
+        y: 0
+        width: 439
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,50 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ceb919ce8016584a0800000000000000
-      internalID: -6591755788630254612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_4
-      rect:
-        serializedVersion: 2
-        x: 1428
-        y: 79
-        width: 349
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cf229f1a69a2d7a0800000000000000
-      internalID: -6353829851005046844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_5
-      rect:
-        serializedVersion: 2
-        x: 1783
-        y: 79
-        width: 349
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de7271ed96cb9a9f0800000000000000
-      internalID: -456626724317747219
+      spriteID: 63d66235b35ffbec0800000000000000
+      internalID: -3548848346197758666
       vertices: []
       indices: 
       edges: []

@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: eb66cfb08d609a34c94a8b6d2a1af972
+guid: c982136e27b2cef409806cb76e3a8768
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4233916778163107010
-    second: SpriteSheetRoolingFireTrap_0
+      213: -7028514090262522143
+    second: SpriteSheetCrabWalkingSides_0
   - first:
-      213: 4764483624955737924
-    second: SpriteSheetRoolingFireTrap_1
+      213: 3429831148229949129
+    second: SpriteSheetCrabWalkingSides_1
   - first:
-      213: 7261681597137527735
-    second: SpriteSheetRoolingFireTrap_2
+      213: -8224684249081425504
+    second: SpriteSheetCrabWalkingSides_2
   - first:
-      213: -6591755788630254612
-    second: SpriteSheetRoolingFireTrap_3
+      213: -1392666649860536527
+    second: SpriteSheetCrabWalkingSides_3
   - first:
-      213: -6353829851005046844
-    second: SpriteSheetRoolingFireTrap_4
+      213: -6149395671182488174
+    second: SpriteSheetCrabWalkingSides_4
   - first:
-      213: -456626724317747219
-    second: SpriteSheetRoolingFireTrap_5
+      213: -1506854440345610004
+    second: SpriteSheetCrabWalkingSides_5
+  - first:
+      213: 4692418954189876163
+    second: SpriteSheetCrabWalkingSides_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -131,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_0
+      name: SpriteSheetCrabWalkingSides_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 79
-        width: 347
-        height: 348
+        x: 18
+        y: 0
+        width: 389
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c47af2a0e4e1ca30800000000000000
-      internalID: 4233916778163107010
+      spriteID: 1e6131f6ca3b57e90800000000000000
+      internalID: -7028514090262522143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_1
+      name: SpriteSheetCrabWalkingSides_1
       rect:
         serializedVersion: 2
-        x: 363
-        y: 79
-        width: 349
-        height: 348
+        x: 423
+        y: 0
+        width: 389
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 447f6a31d98de1240800000000000000
-      internalID: 4764483624955737924
+      spriteID: 9c6f0ddd145399f20800000000000000
+      internalID: 3429831148229949129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_2
+      name: SpriteSheetCrabWalkingSides_2
       rect:
         serializedVersion: 2
-        x: 718
-        y: 79
-        width: 349
-        height: 348
+        x: 828
+        y: 0
+        width: 388
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b3af5540fca6c460800000000000000
-      internalID: 7261681597137527735
+      spriteID: 0a150cf604d0cdd80800000000000000
+      internalID: -8224684249081425504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_3
+      name: SpriteSheetCrabWalkingSides_3
       rect:
         serializedVersion: 2
-        x: 1074
-        y: 79
-        width: 348
-        height: 348
+        x: 1233
+        y: 0
+        width: 389
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ceb919ce8016584a0800000000000000
-      internalID: -6591755788630254612
+      spriteID: 13787848f014cace0800000000000000
+      internalID: -1392666649860536527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_4
+      name: SpriteSheetCrabWalkingSides_4
       rect:
         serializedVersion: 2
-        x: 1428
-        y: 79
-        width: 349
-        height: 348
+        x: 1643
+        y: 0
+        width: 389
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +232,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cf229f1a69a2d7a0800000000000000
-      internalID: -6353829851005046844
+      spriteID: 29dc7dbc735f8aaa0800000000000000
+      internalID: -6149395671182488174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_5
+      name: SpriteSheetCrabWalkingSides_5
       rect:
         serializedVersion: 2
-        x: 1783
-        y: 79
-        width: 349
-        height: 348
+        x: 2048
+        y: 0
+        width: 389
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +253,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de7271ed96cb9a9f0800000000000000
-      internalID: -456626724317747219
+      spriteID: ce8daf2ced3961be0800000000000000
+      internalID: -1506854440345610004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetCrabWalkingSides_6
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 0
+        width: 388
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb2cc56d22de1140800000000000000
+      internalID: 4692418954189876163
       vertices: []
       indices: 
       edges: []

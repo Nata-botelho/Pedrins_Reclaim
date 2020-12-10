@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: eb66cfb08d609a34c94a8b6d2a1af972
+guid: af68f8145e9cb8e41bcf1606d7ef4017
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4233916778163107010
-    second: SpriteSheetRoolingFireTrap_0
+      213: -3155795941934508812
+    second: SpriteSheetSumonningGoatsDevilJr_0
   - first:
-      213: 4764483624955737924
-    second: SpriteSheetRoolingFireTrap_1
-  - first:
-      213: 7261681597137527735
-    second: SpriteSheetRoolingFireTrap_2
-  - first:
-      213: -6591755788630254612
-    second: SpriteSheetRoolingFireTrap_3
-  - first:
-      213: -6353829851005046844
-    second: SpriteSheetRoolingFireTrap_4
-  - first:
-      213: -456626724317747219
-    second: SpriteSheetRoolingFireTrap_5
+      213: -5702456377627642017
+    second: SpriteSheetSumonningGoatsDevilJr_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -131,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_0
+      name: SpriteSheetSumonningGoatsDevilJr_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 79
-        width: 347
-        height: 348
+        x: 13
+        y: 9
+        width: 459
+        height: 438
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c47af2a0e4e1ca30800000000000000
-      internalID: 4233916778163107010
+      spriteID: 4f4df599f4c5434d0800000000000000
+      internalID: -3155795941934508812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_1
+      name: SpriteSheetSumonningGoatsDevilJr_1
       rect:
         serializedVersion: 2
-        x: 363
-        y: 79
-        width: 349
-        height: 348
+        x: 483
+        y: 23
+        width: 459
+        height: 429
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,92 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 447f6a31d98de1240800000000000000
-      internalID: 4764483624955737924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_2
-      rect:
-        serializedVersion: 2
-        x: 718
-        y: 79
-        width: 349
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b3af5540fca6c460800000000000000
-      internalID: 7261681597137527735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_3
-      rect:
-        serializedVersion: 2
-        x: 1074
-        y: 79
-        width: 348
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ceb919ce8016584a0800000000000000
-      internalID: -6591755788630254612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_4
-      rect:
-        serializedVersion: 2
-        x: 1428
-        y: 79
-        width: 349
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cf229f1a69a2d7a0800000000000000
-      internalID: -6353829851005046844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetRoolingFireTrap_5
-      rect:
-        serializedVersion: 2
-        x: 1783
-        y: 79
-        width: 349
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de7271ed96cb9a9f0800000000000000
-      internalID: -456626724317747219
+      spriteID: f57f750332eccd0b0800000000000000
+      internalID: -5702456377627642017
       vertices: []
       indices: 
       edges: []
