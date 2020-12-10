@@ -15,12 +15,13 @@ public class EnemySpawner : MonoBehaviour
         public GameObject gameObject;
     }
 
+    public GameController gameController;
     public List<Bosses> bosses = new List<Bosses>();
     public List<Enemy> enemies = new List<Enemy>();
     float totalWeight;
 
     public int totalEnemies = 3;
-    public int HowManyWaves = 14;
+    public int HowManyWaves = 15;
     private int actualWave = 0;
 
     Vector2 whereToSpawn;
@@ -39,9 +40,9 @@ public class EnemySpawner : MonoBehaviour
     }
 
     void Update() {
-        if (Time.time > nextSpawn && actualWave < HowManyWaves) {
+        if (Time.time > nextSpawn && actualWave <= HowManyWaves) {
             nextSpawn = Time.time + spawnRate;
-            if (actualWave != 4 && actualWave != 9 && actualWave != 14) {
+            if (actualWave != 4 && actualWave != 9 && actualWave < 14) {
                 for (int i = 0; i < totalEnemies; i++) {
                     SpawnEnemy();
                 }
@@ -49,13 +50,16 @@ public class EnemySpawner : MonoBehaviour
                 switch (actualWave)
                 {
                     case(4):
-                    SpawnBoss(0);
+                        SpawnBoss(0);
                     break;
                     case(9):
-                    SpawnBoss(1);
+                        SpawnBoss(1);
                     break;
                     case(14):
-                    SpawnBoss(2);
+                        SpawnBoss(2);
+                    break;
+                    case(15):
+                        gameController.CompleteLevel();
                     break;
                 }
             }

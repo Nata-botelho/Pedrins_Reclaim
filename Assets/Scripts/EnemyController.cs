@@ -178,8 +178,8 @@ public class EnemyController : MonoBehaviour
     private void updateAnim(){
         animator.SetFloat("x", direction.x);
         animator.SetFloat("y", direction.y);
-        animator.SetBool("moving", isMoving);
-        animator.SetBool("attacking", isAttacking);
+        // animator.SetBool("moving", isMoving);
+        // animator.SetBool("attacking", isAttacking);
     }
 
     public void Shoot(){

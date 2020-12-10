@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+// https://www.youtube.com/watch?v=VbZ9_C4-Qbo&ab_channel=Brackeys => Video com código implementado aqui sobre morte do jogador
+// https://www.youtube.com/watch?v=Iv7A8TzreY4&ab_channel=Brackeys => Video com a parte de vitória do jogador
 
 public class GameController : MonoBehaviour
 {
 
     public static GameController instance;
 
+    private static int score = 0;
     private static float health = 100;
     private static int maxHealth = 100;
     private static float moveSpeed = 5f; // Erro dizendo que já existe isso no GameController
-    private static float fireRate = 0.5f;
+    private static float fireRate = 0.05f;
     private static float bulletSize = 0.5f;
 
     public static float Health { get => health; set => health = value; }
@@ -37,7 +42,8 @@ public class GameController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        score++;
         healthText.text = "Saude: " + health;
     }
 
@@ -66,6 +72,16 @@ public class GameController : MonoBehaviour
     }
 
     private static void KillPlayer() {
+        Debug.Log("PLayer got Killed");
+        Restart();
+    }
 
+    static void Restart() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+    }
+
+    public void CompleteLevel() {
+        Debug.Log("Level WONNNN !!!!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 }
