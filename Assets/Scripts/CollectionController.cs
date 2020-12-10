@@ -13,6 +13,7 @@ public class CollectionController : MonoBehaviour
 {
 
     public Item item;
+    private bool catching = false;
     public float healthChange;
     public float moveSpeedChange;
     public float attackSpeedChange;
@@ -27,7 +28,10 @@ public class CollectionController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.tag == "Player") {
+
+        // Catching foi usado para evitar pegar o mesmo item duas vezes (tava com bug)
+        if (collision.tag == "Player" && !catching) {
+            catching = true;
             PlayerController.collectedAmount++;
 
             GameController.HealPlayer(healthChange);
@@ -36,6 +40,7 @@ public class CollectionController : MonoBehaviour
             GameController.BulletSizeChange(bulletSizeChange);
 
             Destroy(gameObject);
+            catching = false;
         }
     }
 }
