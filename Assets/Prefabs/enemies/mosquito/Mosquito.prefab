@@ -137,7 +137,7 @@ MonoBehaviour:
     numberOfRedirections: 0
     redirectionCoolDown: 0
     bulletSpeed: 2
-    bulletInitialPos: {x: 0, y: 0}
+    bulletInitialPos: {x: 0, y: -0.5}
     coolDown: 0.2
     bulletPrefab: {fileID: 1574636048564282231, guid: e915c449eac1e0741b3734063de3f319, type: 3}
   currState: 1

@@ -61,13 +61,13 @@ MonoBehaviour:
     redirectionCoolDown: 1
     bulletSpeed: 3
     bulletInitialPos: {x: 0, y: -2.5}
-    coolDown: 2.5
-    bulletPrefab: {fileID: 1380922894102880495, guid: f9e13db904fdeb54b8ddf4087536e2cd, type: 3}
+    coolDown: 2
+    bulletPrefab: {fileID: 9203748386609312464, guid: a3028f5c1e820e64bb912d0da367fd0a, type: 3}
   currState: 1
   enemyType: 1
   range: 8.25
   speed: 2
-  attackRange: 10
+  attackRange: 8
   animator: {fileID: 1996033703}
   direction: {x: 0, y: 0}
   animSpeed: 0
@@ -85,7 +85,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
