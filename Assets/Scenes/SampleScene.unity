@@ -20708,6 +20708,7 @@ MonoBehaviour:
   enemiesLayer:
     serializedVersion: 2
     m_Bits: 256
+  atkDamage: 70
 --- !u!60 &2016119375
 PolygonCollider2D:
   m_ObjectHideFlags: 0
