@@ -1154,7 +1154,7 @@ MonoBehaviour:
   type: 0
   movement: 0
   speed: 2
-  yAxis: -2.5
+  yAxis: -4.4
   xAxis: 100
 --- !u!60 &707380057
 PolygonCollider2D:
@@ -1659,47 +1659,54 @@ MonoBehaviour:
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
     count: 11
     rate: 1
   - name: Oitava  Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
     count: 12
     rate: 1
   - name: Nona  Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
     count: 13
     rate: 1
   - name: Decima  Wave
     enemies:
-    - gameObject: {fileID: 3040787353348551245, guid: 8c884f8686d238b44904328e92055014, type: 3}
+    - gameObject: {fileID: 8073072590764909530, guid: 5b01569d22d068f4fb84f5963121dc67, type: 3}
     count: 1
     rate: 1
   - name: Decima Primeira  Wave
     enemies:
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
     count: 15
     rate: 1
   - name: Decima Segunda  Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
     count: 16
     rate: 1
   - name: Decima Terceira  Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
+    - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
     count: 17
     rate: 1
   - name: Decima Quarta  Wave
     enemies:
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
     count: 18
     rate: 1
   - name: Decima Quinta  Wave
@@ -1711,6 +1718,7 @@ MonoBehaviour:
     enemies:
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
+    - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
     count: 20
     rate: 1
   spawnPoints:
@@ -4970,7 +4978,7 @@ MonoBehaviour:
   type: 0
   movement: 0
   speed: 1
-  yAxis: -2.5
+  yAxis: 3.52
   xAxis: 100
 --- !u!60 &1271101871
 PolygonCollider2D:
@@ -5271,7 +5279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271101867}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.86, y: 5.36, z: 0}
+  m_LocalPosition: {x: -3.88, y: 3.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
