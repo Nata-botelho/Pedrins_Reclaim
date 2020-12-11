@@ -123,6 +123,58 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &82705930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 82705932}
+  - component: {fileID: 82705931}
+  m_Layer: 0
+  m_Name: ItemSpawner (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &82705931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82705930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6629f9e366b1d74d9f8aa857fad185d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - gameObject: {fileID: 487036431262060230, guid: cd49bbab366fc644b9dc682b7bd79332, type: 3}
+    weight: 0.25
+  - gameObject: {fileID: 3396470604005814892, guid: 7ed2ba0d4b7b5bd48a0d712da8533256, type: 3}
+    weight: 0.25
+  - gameObject: {fileID: 4457865016044008523, guid: 670567371bc372844b56c6fb9b49620b, type: 3}
+    weight: 0.25
+  - gameObject: {fileID: 651631693662214718, guid: 38c52f897cf8ceb4e89ac1023816a102, type: 3}
+    weight: 0.25
+--- !u!4 &82705932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82705930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.23, y: -6.42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &155060686
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395147818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.61, y: -0.52, z: 0}
+  m_LocalPosition: {x: 5.16, y: -1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1477,7 +1529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820619923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.73, y: 0.93, z: 0}
+  m_LocalPosition: {x: -4.64, y: 3.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1562,6 +1614,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867733997}
   m_CullTransparentMesh: 0
+--- !u!1 &905907879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905907881}
+  - component: {fileID: 905907880}
+  m_Layer: 0
+  m_Name: ItemSpawner (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &905907880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905907879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6629f9e366b1d74d9f8aa857fad185d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - gameObject: {fileID: 487036431262060230, guid: cd49bbab366fc644b9dc682b7bd79332, type: 3}
+    weight: 0.25
+  - gameObject: {fileID: 3396470604005814892, guid: 7ed2ba0d4b7b5bd48a0d712da8533256, type: 3}
+    weight: 0.25
+  - gameObject: {fileID: 4457865016044008523, guid: 670567371bc372844b56c6fb9b49620b, type: 3}
+    weight: 0.25
+  - gameObject: {fileID: 651631693662214718, guid: 38c52f897cf8ceb4e89ac1023816a102, type: 3}
+    weight: 0.25
+--- !u!4 &905907881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905907879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.83, y: 3.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &920205575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,25 +1728,25 @@ MonoBehaviour:
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
-    count: 5
+    count: 4
     rate: 1
   - name: Segunda Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
-    count: 6
+    count: 5
     rate: 1
   - name: Terceira Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
-    count: 7
+    count: 6
     rate: 1
   - name: Quarta  Wave
     enemies:
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
-    count: 8
+    count: 7
     rate: 1
   - name: Quinta  Wave
     enemies:
@@ -1653,28 +1757,28 @@ MonoBehaviour:
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
-    count: 10
+    count: 9
     rate: 1
   - name: Setima Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
-    count: 11
+    count: 10
     rate: 1
   - name: Oitava  Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
-    count: 12
+    count: 11
     rate: 1
   - name: Nona  Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
-    count: 13
+    count: 12
     rate: 1
   - name: Decima  Wave
     enemies:
@@ -1686,28 +1790,28 @@ MonoBehaviour:
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
-    count: 15
+    count: 14
     rate: 1
   - name: Decima Segunda  Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
-    count: 16
+    count: 15
     rate: 1
   - name: Decima Terceira  Wave
     enemies:
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
-    count: 17
+    count: 16
     rate: 1
   - name: Decima Quarta  Wave
     enemies:
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
-    count: 18
+    count: 17
     rate: 1
   - name: Decima Quinta  Wave
     enemies:
@@ -1719,7 +1823,7 @@ MonoBehaviour:
     - gameObject: {fileID: 1496322459674554906, guid: d3c4a2f0c58b32d43a679c4a04a7b024, type: 3}
     - gameObject: {fileID: 5069012429014544992, guid: 43d10d37ba530944c8329bd6cba6a3f7, type: 3}
     - gameObject: {fileID: 1693018643585407612, guid: 3028a05b35edc3d48a22e9c615abc9e0, type: 3}
-    count: 20
+    count: 18
     rate: 1
   spawnPoints:
   - {fileID: 536444471}
@@ -5331,7 +5435,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273957454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.8, y: 1.68, z: 0}
+  m_LocalPosition: {x: 4.8, y: 2.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

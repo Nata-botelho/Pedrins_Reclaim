@@ -61,12 +61,12 @@ MonoBehaviour:
     redirectionCoolDown: 1
     bulletSpeed: 3
     bulletInitialPos: {x: 0, y: -2.5}
-    coolDown: 0.5
+    coolDown: 2.5
     bulletPrefab: {fileID: 1380922894102880495, guid: f9e13db904fdeb54b8ddf4087536e2cd, type: 3}
   currState: 1
   enemyType: 1
   range: 8.25
-  speed: 3
+  speed: 2
   attackRange: 10
   animator: {fileID: 1996033703}
   direction: {x: 0, y: 0}
