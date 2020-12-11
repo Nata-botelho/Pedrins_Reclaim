@@ -39,6 +39,7 @@ public class WaveSpawner : MonoBehaviour
     public GameObject LevelLoader;
 
     public SpawnState state = SpawnState.COUNTING;
+    private bool isToSpawn = true;
     void Start() {
         waveCountdown = timeBetweenWaves;    
     }
@@ -69,13 +70,14 @@ public class WaveSpawner : MonoBehaviour
         state = SpawnState.COUNTING;
         waveCountdown = timeBetweenWaves;
 
-        if (nextWave+1 > waves.Length-1) {
-            // Load Next Level ?
+        int numberOfBosses = GameObject.FindGameObjectsWithTag("Boss").Length;
+
+        if (nextWave+1 > waves.Length-1 && numberOfBosses == 0) {
             nextWave = 0;
             LevelLoader.GetComponent<LevelLoader>().LoadWin();
 
             Debug.Log("All waves completed, Looping");
-        } else {
+        } else if (nextWave+1 <= waves.Length-1) {
             nextWave++;
         }
     }
@@ -86,9 +88,15 @@ public class WaveSpawner : MonoBehaviour
             searchCountdown = 1f;
             int numberOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
             int numberOfBosses = GameObject.FindGameObjectsWithTag("Boss").Length;
-            if (numberOfEnemies == 0 & numberOfBosses == 0) {
+            if (numberOfEnemies == 0 && isToSpawn) {
                 return false;
-            }    
+            } else if (numberOfBosses > 0 && isToSpawn) {
+                isToSpawn = false;
+                return false;
+            } else if (isToSpawn == false && numberOfBosses == 0 && numberOfEnemies == 0) {
+                isToSpawn = true;
+                return false;
+            }
         }
         return true;
     }

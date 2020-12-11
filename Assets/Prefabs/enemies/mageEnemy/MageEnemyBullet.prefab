@@ -146,6 +146,10 @@ PrefabInstance:
       propertyPath: isEnemyBullet
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7552777697782713214, guid: df86f01a5ce589c4a8b6500aca06ce58, type: 3}
+      propertyPath: lifeTime
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df86f01a5ce589c4a8b6500aca06ce58, type: 3}
 --- !u!1 &9203748386609312464 stripped

@@ -299,7 +299,7 @@ MonoBehaviour:
   enemyType: 1
   range: 15
   speed: 1
-  attackRange: 7
+  attackRange: 8.5
   animator: {fileID: 2946630577289839086}
   direction: {x: 0, y: 0}
   animSpeed: 0

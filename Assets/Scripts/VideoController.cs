@@ -25,6 +25,7 @@ public class VideoController: MonoBehaviour
     // https://docs.unity3d.com/Manual/class-VideoPlayer.html Dar play no video quando quiser
     public void PlayIntro() {
         canvas.active = false;
+        FindObjectOfType<AudioManager>().playingSound.source.volume = 0.1f;
         VideoPlayer.Play();
     }
 
@@ -36,6 +37,7 @@ public class VideoController: MonoBehaviour
     void  LoadWin(VideoPlayer vp) {
         GameObject.Find("Outro").active = false;
         canvas.active = true;
+        FindObjectOfType<AudioManager>().playingSound.source.volume = 0.7f;
     }
 
 }

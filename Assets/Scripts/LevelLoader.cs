@@ -9,9 +9,12 @@ public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
     public float transitionTime = 1f;
+    AudioManager audio = null;
 
     public void LoadNextLevel() {
-
+        audio = FindObjectOfType<AudioManager>();
+        audio.Pause();
+        audio.Play("Playing");
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
@@ -20,10 +23,22 @@ public class LevelLoader : MonoBehaviour
     }
 
     public void LoadWin() {
+        if (audio == null) {
+            audio = FindObjectOfType<AudioManager>();
+        }
+        audio.Pause();
+        audio.Play("Ending");
+        audio.Volume(0.1f);
         StartCoroutine(LoadLevel(2));
     }
 
     public void LoadStart() {
+        if (audio == null) {
+            audio = FindObjectOfType<AudioManager>();
+        }
+        audio.Pause();
+        audio.Play("Start");
+        audio.Volume(0.7f);
         StartCoroutine(LoadLevel(0));
     }
 

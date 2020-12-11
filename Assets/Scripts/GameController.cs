@@ -13,10 +13,10 @@ public class GameController : MonoBehaviour
     public static GameController instance;
 
     private static int score = 0;
-    private static float health = 100;
-    private static int maxHealth = 100;
-    private static float moveSpeed = 5f; // Erro dizendo que já existe isso no GameController
-    private static float fireRate = 0.2f;
+    private static float health = 150;
+    private static int maxHealth = 150;
+    private static float moveSpeed = 4f; // Erro dizendo que já existe isso no GameController
+    private static float fireRate = 0.3f;
     private static float bulletSize = 0.5f;
 
     public static float Health { get => health; set => health = value; }
@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = 100;
+        health = 150;
         moveSpeed = 5f; // Erro dizendo que já existe isso no GameController
         fireRate = 0.2f;
         bulletSize = 0.5f;
@@ -47,6 +47,7 @@ public class GameController : MonoBehaviour
     void Update()
     {   
         score++;
+        health = Mathf.Min(maxHealth, health + 0.001f);
         healthText.text = "Saude: " + health;
     }
 
