@@ -1266,23 +1266,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1365237331689446427, guid: 5bd255f7de1de024b889d6ca4d90765a, type: 3}
       propertyPath: sounds.Array.data[0].volume
-      value: 0.4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1365237331689446427, guid: 5bd255f7de1de024b889d6ca4d90765a, type: 3}
       propertyPath: sounds.Array.data[1].volume
-      value: 0.4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1365237331689446427, guid: 5bd255f7de1de024b889d6ca4d90765a, type: 3}
       propertyPath: sounds.Array.data[2].volume
-      value: 0.4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1365237331689446427, guid: 5bd255f7de1de024b889d6ca4d90765a, type: 3}
       propertyPath: sounds.Array.data[3].volume
-      value: 0.4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1365237331689446427, guid: 5bd255f7de1de024b889d6ca4d90765a, type: 3}
       propertyPath: sounds.Array.data[4].volume
-      value: 0.4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6844297040584268114, guid: 5bd255f7de1de024b889d6ca4d90765a, type: 3}
       propertyPath: m_LocalPosition.x
